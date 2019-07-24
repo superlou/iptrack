@@ -6,6 +6,11 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {});
+Router.map(function() {
+  this.route('patents');
+  this.route('new-patent-app');
+  this.route('new-patent-grant');
+  this.route('patent-app', {path: '/patents/app/:patent-app_id'});
+});
 
 export default Router;

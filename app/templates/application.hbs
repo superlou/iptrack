@@ -1,5 +1,16 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <LinkTo @route="application" class="navbar-brand">IP Track</LinkTo>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <LinkTo @route="patents" class="nav-link">Patents</LinkTo>
+    </li>
+  </ul>
+  <form class="form-inline">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><FaIcon @icon="search"/></button>
+  </form>
+</nav>
 
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>

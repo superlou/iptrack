@@ -1,0 +1,12 @@
+<h1>Patents</h1>
+<LinkTo @route="new-patent-app" class="btn btn-primary"><FaIcon @icon="plus"/> Application</LinkTo>
+<LinkTo @route="new-patent-grant" class="btn btn-primary"><FaIcon @icon="plus"/> Grant</LinkTo>
+
+<h2>Applications</h2>
+<ul>
+  {{#each this.model.patentApps as |app|}}
+    <li><LinkTo @route="patent-app" @model={{app}}>{{app.number}}, {{app.title}}</LinkTo></li>
+  {{/each}}
+</ul>
+
+<h2>Grants</h2>

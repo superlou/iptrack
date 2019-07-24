@@ -1,0 +1,15 @@
+<h1>New Patent Application</h1>
+<form>
+  <div class="form-group">
+    <label for="title">Patent Title</label>
+    <Input @id="title" type="text" @value={{this.model.title}} class="form-control"/>
+    <small id="titleHelp" class="form-text text-muted">Title of the patent grant</small>
+  </div>
+  <div class="form-group">
+    <label for="number">Number</label>
+    <Input @id="number" @value={{this.model.number}} class="form-control"/>
+    <small id="numberHelp" class="form-text text-muted">Publication number of the applicaiton, e.g. US13/296,029</small>
+  </div>
+  <button {{action "save" this.model.title this.model.number}} class="btn btn-primary">Submit</button>
+  <LinkTo @route="patents" class="btn btn-link">Cancel</LinkTo>
+</form>
