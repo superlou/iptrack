@@ -26,7 +26,7 @@ export default class EditableTextComponent extends Component {
   }
 
   @action
-  targetInput() {
-    console.log('here');
+  targetInput(element) {
+    element.focus();
   }
 }

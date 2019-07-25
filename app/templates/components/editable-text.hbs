@@ -1,7 +1,5 @@
 {{#if this.editing}}
-  <input value={{@value}} {{on "keydown" this.change}}/>
-
-    <div {{did-insert this.targetInput}}>tes</div>
+  <input value={{@value}} {{on "keydown" this.change}} {{did-insert this.targetInput}}/>
 {{else}}
   <p {{action edit}}>{{@value}}</p>
 {{/if}}
