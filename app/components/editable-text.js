@@ -24,4 +24,9 @@ export default class EditableTextComponent extends Component {
       this.editing = false;
     }
   }
+
+  @action
+  targetInput() {
+    console.log('here');
+  }
 }

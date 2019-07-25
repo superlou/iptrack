@@ -4,9 +4,15 @@
     <EditableText @attr="title" @value={{@model.title}} @onSave={{action this.save}}/>
   </div>
 </div>
-<p>
-  Number: <EditableText @attr="number" @value={{@model.number}} @onSave={{action this.save}}/>
-</p>
-<p>
-  Number: <EditableText @attr="publication" @value={{@model.publication}} @onSave={{action this.save}}/>
-</p>
+<div class="property">
+  <div class="property-title">Number</div>
+  <div class="property-display">
+    <EditableText @attr="number" @value={{@model.number}} @onSave={{action this.save}}/>
+  </div>
+</div>
+<div class="property">
+  <div class="property-title">Publication</div>
+  <div class="property-display">
+    <EditableText @attr="publication" @value={{@model.publication}} @onSave={{action this.save}}/>
+  </div>
+</div>

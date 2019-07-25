@@ -1,0 +1,25 @@
+.property {
+  display: flex;
+
+  .property-title {
+    padding: 4px;
+    width: 150px;
+  }
+
+  .property-display {
+    flex-grow: 1;
+
+    p {
+      margin: 5px;
+      padding-left: 4px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+}
