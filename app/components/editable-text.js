@@ -13,7 +13,7 @@ export default class EditableTextComponent extends Component {
   }
 
   @action
-  onInput(event) {
+  change(event) {
     this.newValue = event.target.value;
 
     if (event.key === "Enter") {

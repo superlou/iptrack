@@ -1,5 +1,5 @@
 {{#if this.editing}}
-  <input value={{@value}} onkeydown={{action this.onInput}}/>
+  <input value={{@value}} {{on "keydown" this.change}}/>
 {{else}}
   <span {{action edit}}>{{@value}}</span>
 {{/if}}
